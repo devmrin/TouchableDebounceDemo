@@ -14,7 +14,7 @@ class TouchableDebounce extends Component {
         activeOpacity={this.props.activeOpacity}
         onPress={debounce(() => {
           this.props.onPress();
-        }, 500)}
+        }, 500)} //wait period in miliseconds
       >
         {this.props.children}
       </TouchableOpacity>
